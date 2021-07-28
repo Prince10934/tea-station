@@ -128,9 +128,6 @@ NavBar
   height: 100vh;
   transition: var(--transition);
 }
-.w-300 {
-  width: 300px;
-}
 @keyframes bounce {
   0% {
     transform: scale(0.75);
@@ -559,11 +556,6 @@ Media Queries
   .skills-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (max-width: 756px) {
-  .sidebar {
-    width: 100vw !important;
   }
 }
 @media screen and (min-width: 800px) {

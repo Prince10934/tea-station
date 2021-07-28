@@ -2,8 +2,13 @@ const closeBtn = document.querySelector(".close-sidebar");
 const openBtn = document.querySelector(".open-sidebar");
 const sidebar = document.querySelector(".sidebar");
 openBtn.addEventListener("click", () => {
-  sidebar.classList.add("w-300");
+  const width = window.innerWidth;
+  if (width <= 756) {
+    sidebar.style.width = "100vw";
+  } else {
+    sidebar.style.width = "300px";
+  }
 });
 closeBtn.addEventListener("click", () => {
-  sidebar.classList.remove("w-300");
+  sidebar.style.width = 0;
 });
